@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter | Prueba jQuery</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Matias Salinas">
+	<meta name="description" content="Prueba jQuery bootcamp front-end desafio latam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html"><i class="fab fa-twitter"></i></a>
+	    </div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active">
+	        	<a href="index.html"> <i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+	        </li>
+	        <li>
+	        	<a href="#"> <i class="far fa-bell"></i> Notificaciones </a>
+	        </li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li> <button class="tweet-btn">Tweet</button> </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div class="new_tweet-div"><button class="new_tweet-btn"><img src="assets/images/new-tweet-btn.png"></button></div>
+	<div class="container">
+		<div class="row" id="main__row">
+			<section class="create__tweet-section col-xs-12 col-md-5" id="create__tweet-section">
+				<img class="create__tweet-profileimg" src="assets/images/profile.png">
+				<div class="profile__info">
+					<h3>Matias Salinas</h3>
+					<h5>@MatoSalinas</h5>
+				</div>
+				<form class="create__tweet-form">
+					<textarea class="tweet__textarea" maxlength="280" rows="6" placeholder="What's happening?"></textarea>
+					<br>
+					<input type="submit" value="Tweet" id="tweet-btn">
+				</form>	
+			</section>
+			<section class="tweets__section col-xs-12 col-md-7">
+				<article class="tweet__article">
+					<div class="col-xs-3 tweet__profile-img">
+						<img class="img-responsive" src="assets/images/profile.png">
+					</div>
+					<div class="col-xs-9 tweet__body">
+						<h3>Matias Salinas</h3><span>@MatoSalinas</span>
+						<p>Me gusta cuando callas porque estás como ausente</p>
+						<ul>
+							<li><i class="far fa-comment"></i></li>
+							<li><i class="fas fa-retweet"></i></li>
+							<li><i class="far fa-heart"></i></li>
+						</ul>
+					</div>
+				</article>
+			</section>
+		</div>
+	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+  	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/myscript.js"></script>
+</body>
+</html>

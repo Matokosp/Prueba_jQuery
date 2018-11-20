@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: rgb(230, 236, 240);
+}
+
+.clearfix {
+	clear: both;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+}
+
+.nav li {
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #34c1ed;
+    border-bottom: #34c1ed solid 3px;
+    background-color: transparent;
+}
+
+.navbar-default .container-fluid {
+    padding-right: 15vw;
+    padding-left: 15vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*COLUMNA CREAR TWEET*/
+
+.tweet-btn {
+	display: none;
+}
+
+.fa-twitter {
+	color: #429cd6;
+	font-size: 1.3em;
+}
+
+.create__tweet-section {
+	background-color: #fff;
+	padding: 20px 10px;
+	position: absolute;
+	top: 60px;
+	z-index: 99;
+	transition: 1s;
+}
+
+.create__tweet-section--hidden {
+	background-color: #fff;
+	padding: 20px 10px;
+	position: absolute;
+	top: -300px;
+	z-index: 99;
+	opacity: 0;
+	transition: 1s;
+}
+
+.profile__info {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+.profile__info h3{
+	font-weight: 700;
+	margin: 0px 0 2px 0;
+}
+
+.profile__info h5{
+	color: #8c8c8c;
+	margin-top: 2px;
+	font-size: 
+}
+
+.create__tweet-profileimg {
+	width: 70px;
+}
+
+.create__tweet-form {
+	margin-left: 80px;
+}
+
+.tweet__textarea {
+	border: none;
+	padding: 10px;
+	width: 90%;
+	background-color: #f1f1f1;
+}
+
+.create__tweet-form input {
+	background-color: #429cd6;
+	border: none;
+	margin-top: 10px;
+	padding: 5px 10px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 50px;
+}
+
+.new_tweet-div {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 60px;
+}
+
+.new_tweet-btn {
+	border: none;
+	background-color: #429cd6;
+	padding: 12px;
+	border-radius: 50%;
+}
+
+.new_tweet-btn img {
+	width: 100%;
+}
+
+/*COLUMNA TWEETS*/
+
+.tweets__section {
+	background-color: #fff;
+	padding: 15px 30px;
+}
+
+
+
+/*MEDIA QUERY 768PX*/
+
+@media (min-width: 768px){
+
+.new_tweet-div {
+	display: none;
+}
+
+.create__tweet-section {
+	background-color: #fff;
+	padding: 20px;
+	position: relative;
+	top: 0px;
+}
+
+.tweet-btn {
+	display: block;
+	color: #fff;
+	background-color: #5ccbef;
+	border: none;
+	padding: 8px 20px;
+	margin-top: 7px;
+	border-radius: 50px;
+}
+
+.tweet-btn:hover {
+	background-color: #34c1ed;
+}
+
+}
