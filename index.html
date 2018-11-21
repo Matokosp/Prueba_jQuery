@@ -36,7 +36,7 @@
 	        </li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
-	        <li> <button class="tweet-btn">Tweet</button> </li>
+	        <li> <button class="tweet-btn" id="tweet__btn-md">Tweet</button> </li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -44,7 +44,7 @@
 	<div class="new_tweet-div"><button class="new_tweet-btn"><img src="assets/images/new-tweet-btn.png"></button></div>
 	<div class="container">
 		<div class="row" id="main__row">
-			<section class="create__tweet-section col-xs-12 col-md-5" id="create__tweet-section">
+			<section class="create__tweet-section col-xs-12 col-lg-5" id="create__tweet-section">
 				<img class="create__tweet-profileimg" src="assets/images/profile.png">
 				<div class="profile__info">
 					<h3>Matias Salinas</h3>
@@ -56,21 +56,28 @@
 					<input type="submit" value="Tweet" id="tweet-btn">
 				</form>	
 			</section>
-			<section class="tweets__section col-xs-12 col-md-7">
-				<article class="tweet__article">
-					<div class="col-xs-3 tweet__profile-img">
+			<section class="tweets__section col-xs-12 col-lg-7">
+				<article class="row tweet__article">
+					<button class="delete__tweet-div" id="delete__tweet">
+						<i class="far fa-trash-alt"></i>
+					</button>
+					<div class="tweet__profile-img col-xs-3">
 						<img class="img-responsive" src="assets/images/profile.png">
 					</div>
-					<div class="col-xs-9 tweet__body">
-						<h3>Matias Salinas</h3><span>@MatoSalinas</span>
-						<p>Me gusta cuando callas porque estás como ausente</p>
-						<ul>
+					<div class="tweet__body col-xs-9">
+						<h3>Matias Salinas</h3><a class="profile__tag" href="https://mobile.twitter.com/MatoSalinas">@MatoSalinas</a>
+						<p>Our first night living together, we took in that puppy howling outside the door. An auspice, I thought. But we’d never done this before. We didn’t know how small things can grow, what little space we can be left to live in. We were not the sort to abandon something until we were.</p>
+						<ul id="rrss__icons">
 							<li><i class="far fa-comment"></i></li>
 							<li><i class="fas fa-retweet"></i></li>
-							<li><i class="far fa-heart"></i></li>
+							<li id="like__btn">
+								<i class="far fa-heart" id="like"></i>
+								<i class="fas fa-heart" id="liked"></i>
+								<span id="counter__likes">0</span>
+							</li>
 						</ul>
 					</div>
-				</article>
+				</article>			
 			</section>
 		</div>
 	</div>
